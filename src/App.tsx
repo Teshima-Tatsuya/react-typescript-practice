@@ -2,6 +2,7 @@ import { Task } from "./components/Types";
 import React, { useState } from "react";
 import TaskList from "./components/TaskList";
 import TaskInput from "./components/TaskInput";
+import "./App.css";
 
 const initialState: Task[] = [
   {

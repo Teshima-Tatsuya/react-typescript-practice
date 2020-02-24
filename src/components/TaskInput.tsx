@@ -30,13 +30,17 @@ const TaskInput: React.FC<Props> = ({ setTasks, tasks }) => {
   return (
     <div>
       <div className="inputForm">
-        <input
-          type="text"
-          className="text"
-          value={inputTitle}
-          onChange={handleInputChange}
-        />
-        <button onClick={handleSubmit}>追加</button>
+        <div className="inner">
+          <input
+            type="text"
+            className="input"
+            value={inputTitle}
+            onChange={handleInputChange}
+          />
+          <button onClick={handleSubmit} className="btn is-primary">
+            追加
+          </button>
+        </div>
       </div>
     </div>
   );

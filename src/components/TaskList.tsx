@@ -18,8 +18,8 @@ const TaskList: React.FC<Props> = ({ tasks, setTasks }) => {
     setTasks(prev => prev.filter(t => t.id !== task.id));
   };
   return (
-    <div>
-      <ul>
+    <div className="inner">
+      <ul className="task-list">
         {tasks.map(task => (
           <TaskItem
             key={task.id}
