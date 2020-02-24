@@ -10,7 +10,9 @@ type Props = {
 const TaskItem: React.FC<Props> = ({ task, handleDone, handleDelete }) => {
   return (
     <ul>
-      <li>test</li>
+      <li>
+        {task.id}:{task.title} {task.done}
+      </li>
     </ul>
   );
 };
